@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="hibernateSessionFactory">
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">david</property>
+		<property name="hibernate.connection.username">david</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mcsharesbd</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<!-- <property name="hibernate.hbm2ddl.auto">create</property> -->
+		<mapping
+			resource="com/mcb/mcshares/entities/Entity_Customers.hbm.xml" />
+		<mapping
+			class="com.mcb.mcshares.entities.Entity_Customers" />
+			
+		<mapping
+			resource="com/mcb/mcshares/entities/Entity_XmlFiles.hbm.xml" />
+		<mapping
+			class="com.mcb.mcshares.entities.Entity_XmlFiles" />
+			
+		<mapping
+			resource="com/mcb/mcshares/entities/Entity_CustomerContactDetails.hbm.xml" />
+		<mapping class="com.mcb.mcshares.entities.Entity_CustomerContactDetails" />
+		
+		<mapping
+			resource="com/mcb/mcshares/entities/Entity_ErrorLogs.hbm.xml" />
+		<mapping class="com.mcb.mcshares.entities.Entity_ErrorLogs" />
+		
+		<mapping
+			resource="com/mcb/mcshares/entities/Entity_MailingAddresses.hbm.xml" />
+		<mapping class="com.mcb.mcshares.entities.Entity_MailingAddresses" />
+		
+		
+        <mapping
+			resource="com/mcb/mcshares/entities/Entity_SharesDetails.hbm.xml" />
+		<mapping class="com.mcb.mcshares.entities.Entity_SharesDetails" />
+		
+			
+	</session-factory>
+</hibernate-configuration>

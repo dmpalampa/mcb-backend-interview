@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class
+		name="com.mcb.mcshares.entities.Entity_MailingAddresses"
+		table="mailing_addresses" catalog="mcsharesbd">
+
+		<id column="address_id" name="addressId">
+			<generator class="identity"></generator>
+		</id>
+		<property name="addressLine1">
+			<column name="address_line_1" />
+		</property>
+		
+		<property name="addressLine2">
+			<column name="address_line_2" />
+		</property>
+		
+		<property name="townCity">
+			<column name="town_city" />
+		</property>
+		
+		<property name="country">
+			<column name="country" />
+		</property>
+		
+		<property name="customerId">
+			<column name="customer_id" />
+		</property>
+
+	</class>
+</hibernate-mapping>

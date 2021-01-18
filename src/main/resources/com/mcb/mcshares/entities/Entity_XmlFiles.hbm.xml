@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.mcb.mcshares.entities.Entity_XmlFiles"
+		table="xml_files" catalog="mcsharesbd">
+
+		<id column="f_id" name="fId">
+			<generator class="identity"></generator>
+		</id>
+		<property name="fName">
+			<column name="f_name" />
+		</property>
+		<property name="fContent">
+			<column name="f_content" />
+		</property>
+		
+		<property name="fType">
+			<column name="f_type" />
+		</property>  
+
+	</class>
+</hibernate-mapping>

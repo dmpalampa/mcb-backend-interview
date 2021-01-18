@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class
+		name="com.mcb.mcshares.entities.Entity_SharesDetails"
+		table="shares_details" catalog="mcsharesbd">
+
+		<id column="shares_id" name="shareId">
+			<generator class="identity"></generator>
+		</id>
+		<property name="numShares">
+			<column name="num_shares" />
+		</property>
+		<property name="sharesPrice">
+			<column name="shares_price" />
+		</property>
+		
+		<property name="customerId">
+			<column name="customer_id" />
+		</property>
+		
+		<property name="balance">
+			<column name="balance" />
+		</property>
+
+	</class>
+</hibernate-mapping>

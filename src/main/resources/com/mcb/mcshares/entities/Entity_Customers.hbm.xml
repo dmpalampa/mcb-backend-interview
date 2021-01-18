@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class
+		name="com.mcb.mcshares.entities.Entity_Customers"
+		table="customers" catalog="mcsharesbd">
+
+		<id column="id" name="id">
+			<generator class="identity"></generator>
+		</id>
+		
+		<property name="customerId">
+			<column name="customer_id" />
+		</property>
+		
+		<property name="customerType">
+			<column name="customer_type" />
+		</property>
+		
+		<property name="dateOfBirth">
+			<column name="date_of_birth" />
+		</property>
+		
+		<property name="registrationNo">
+			<column name="registration_no" />
+		</property>
+		
+		<property name="dateIncorp">
+			<column name="date_incorp" />
+		</property>
+
+	</class>
+</hibernate-mapping>
